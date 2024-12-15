@@ -8,14 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="EurekaServer" />
+        <module name="module5" />
+        <module name="module1" />
         <module name="CommunityProject" />
         <module name="module2" />
       </profile>
-      <profile name="Annotation profile for module3" enabled="true">
+      <profile name="Annotation profile for module5" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="false">
+        <processorPath>
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
         </processorPath>
         <module name="module3" />
@@ -26,8 +28,11 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="CommunityProject" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="module1" options="-parameters" />
       <module name="module2" options="-parameters" />
       <module name="module3" options="-parameters" />
+      <module name="module5" options="-parameters" />
     </option>
   </component>
 </project>
